@@ -1,0 +1,39 @@
+//Header Styles
+@use '../base/variables' as var;
+
+#header {
+  width: 100%;
+
+  .top-row {
+    margin-top: 17px;
+    text-align: right;
+    color: var.$yellow;
+
+    .twelve.columns {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      a {
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: .05em;
+        line-height: 18px;
+        font-family: var.$secondary_font;
+  
+        &:hover {
+          text-decoration: none;
+          font-weight: 800;
+        }
+      }
+    }
+  }
+
+  .logo-nav-row {
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+}

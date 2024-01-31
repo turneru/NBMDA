@@ -1,0 +1,89 @@
+//Navigation Layout & Styles
+@use '../base/variables' as var;
+
+#eventMenu {
+	display: inline-block;
+	width: 100%; 
+	background: var.$nav_bg_color;
+	margin-top: 0;
+	margin-bottom: 50px;
+
+    .topLevel {
+        position:relative;
+        padding:0px 0px 0px 0px;
+        margin:0px 0px 0px 0px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+
+        li {
+            float:left;
+            margin:0;
+            list-style-type:none;
+            position:relative;
+
+            a {
+                display:block;
+                color: var.$nav_item_color;
+				font-size: var.$nav_item_font_size;
+				font-weight: var.$nav_item_font_weight;
+				text-decoration:none;
+				padding: var.$nav_item_padding;
+				box-sizing: border-box;
+            }
+
+            &:hover {
+                background: var.$nav_item_hover_bg_color;
+            }
+
+            &:hover a, a:hover{
+                color: var.$nav_item_hover_color;
+                text-decoration:none;
+            }
+
+            &:hover .subLevel{
+                display:block !important;
+                white-space:nowrap;
+            }
+        }
+    }
+
+    .subLevel{
+        display:none;
+        position: absolute;
+        min-width: 280px;
+        width: 100%;
+        margin:0;
+        padding:0;
+        z-index:5000;
+        background-color: var.$subnav_bg_color;
+
+        ul {
+            margin:0;
+            position:relative;
+            z-index:1200;
+            padding: 0px 0px 0px;
+
+            li {
+                float: left;
+                width: 100%;
+
+                a {
+                    background-image:none;
+                    padding: 8px 10px 8px 18px;
+                    display:block;
+                    background-image:none;    
+                    white-space: normal;
+                }
+            }
+        }
+
+        > ul > li > a:hover {
+            color: var.$subnav_item_hover_color;
+            background-color: var.$subnav_item_hover_bg_color;
+        }
+    }
+}

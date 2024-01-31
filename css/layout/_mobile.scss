@@ -1,0 +1,394 @@
+@use '../base/variables' as var;
+
+/* Mobile CSS
+================================================== */
+@media only screen and (max-width: 1780px) {
+	#dnnMenu .topLevel li.item.last.haschild:hover .subLevel {
+		right: 0;
+	}
+}
+
+@media only screen and (max-width: 1475px) {
+	#dnnMenu .topLevel li:nth-of-type(4):hover .subLevel {
+		right: 0;
+	}
+}
+
+/* Smaller than standard 960 (devices and browsers) */
+
+@media only screen and (max-width: 1025px) {
+
+}
+
+@media only screen and (max-width: 959px) {
+
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 1300px) {
+	
+}
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 768px) {
+	
+	.slicknav_menu {
+		display: block;
+	}
+	.nav, .desktop  {
+		display:none;	
+	}
+	
+	.mobile, .flex {
+		display: block;
+	}
+	.left, .center, .right {
+		text-align: center;
+	}
+	
+	.alpha {
+		float:left;
+		width:100% !important;
+	}
+
+	.omega {
+		float:right;
+		width:100% !important;
+	}
+
+	#header { 
+
+		.mobile.logo {
+			text-align: center;
+			margin: 25px 0px 10px;
+			display: inline-block;
+			width: 100%;
+		}
+	
+		.top-row {
+			text-align: center;
+			margin-bottom: 10px;
+			margin-top: 10px;
+
+			.twelve.columns {
+				align-items: center;
+				justify-content: center;
+				flex-wrap: wrap;
+
+				.search-panel {
+					margin: 20px 0px;
+				}
+			}
+		}
+
+		.logo-nav-row {
+			margin-bottom: 25px;
+			display: none;
+
+			.col-md-3 {
+				text-align: center;
+			}
+		} 
+	}
+
+	#hero {
+		.hero-rotator {
+			margin-bottom: 65px;
+
+			.slide-container .container {
+				padding: 20px 50px 20px 50px;
+				min-height: 705px;
+		
+				.row {
+					display: flex;
+					flex-direction: column-reverse;
+	
+					.col-md-5 {
+						padding-right: 0px;
+	
+						h1 {
+							margin-top: 25px;
+						}	
+	
+						.yellow-line {
+							right: 0;
+							margin-left: -50vw;
+							margin-right: -50vw;
+							width: 150vw;
+							left: 0;
+						}
+					}
+				}
+			}  
+		} 
+	
+		.slick-next {
+			right: 5px;
+		}
+	
+		.slick-prev {
+			left: 5px;
+		}
+	} 
+
+	#channel {
+		margin-bottom: 75px;
+
+		.edn_404_article_list_wrapper .cc_article_card {
+			flex: 1 1 100%;
+			margin-bottom: 25px;
+	
+			&:nth-of-type(odd) {
+				margin-right: 0;
+			}
+	
+			&:nth-of-type(even) {
+				margin-left: 0;
+			}
+	
+			> .row {
+    			flex-direction: column;
+
+				.cc-image {
+					margin: 0 auto;
+					text-align: center;
+					display: none;
+				}
+		
+				.article-info {
+					height: auto;
+				}
+			} 
+		}
+	} 
+
+	#testimonial {
+
+		.quote-row {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-items: center;
+			margin-bottom: 100px;
+			padding: 0;
+
+			.circle-bg {
+				text-align: center;
+				margin-bottom: 20px;
+		
+				&:after {
+					left: 5px;
+				}
+			}
+
+			h3, p.name, p {
+				text-align: center !important;
+			}
+		}
+	} 
+
+	#callouts {
+		.col-md-6.pr13 {
+			padding-right: 0;
+			margin-bottom: 25px;
+		}
+
+		.col-md-6.pl13 {
+			padding-left: 0;
+		}
+
+		#dnn_LeftPane .map-wrapper .map-img-hover {
+			left: 0;
+		}
+
+		#dnn_RightPane {
+			p:first-of-type {
+				padding: 0;
+			}
+	
+			p:last-of-type {
+				padding: 0 10px;
+			}
+		} 
+	}
+
+	#benefits .box-row {
+		.box {
+			position: relative;
+			margin-bottom: 80px;
+
+			&.pl13 {
+				margin-bottom: 25px;
+			}
+		}
+
+		.pr13, .pl13, .pr6, .pl6 {
+			padding: 0;
+		}
+
+		img {
+			top: -40px;
+		}
+	} 
+
+	.pr50 {
+		padding-right: 0;
+	}
+
+	.pl50 {
+		padding-left: 0px;
+	}
+
+	.img-boxes {
+		padding: 0px 20px;
+		margin-bottom: 25px;
+
+		&:before {
+			content: "";
+			background: url(../images/box_bottom.png) no-repeat center;
+			background-size: contain;
+			position: absolute;
+			z-index: 200;
+			left: 0px;
+			bottom: -22px;
+			width: 109px;
+			height: 72px;
+		}
+
+		&:after {
+			content: "";
+			background: url(../images/box_top.png) no-repeat center;
+			background-size: contain;
+			position: absolute;
+			z-index: 200;
+			right: 0px;
+			top: -10px;
+			width: 39px;
+			height: 39px;
+		}
+	}
+
+	#body_content .callout {
+		padding: 25px;
+
+		.quote {
+			font-size: 3.0rem;
+			line-height: 34px;
+			margin: 0 auto 20px;
+		}
+	}
+
+	#body_content {
+		.circle-bg {
+			position: relative;
+			width: auto;
+	
+			&:after {
+				right: auto;
+				left: 0;
+				width: 218px;
+				height: 218px;
+			}
+		}	
+
+		#dnn_ctr394_HtmlModule_lblContent h5.name {
+			margin-top: 30px;
+		}
+
+		h5:not(.name) {
+			margin-bottom: 0;
+		}
+
+		h5.name {
+			margin-top: 10px;
+		}
+
+		h5:not(.name) + h5.name {
+			margin-top: 5px;
+		}
+
+		h5.company {
+			margin-bottom: 20px;
+		}
+
+		#map-top {
+			padding-top: 50px;
+		}
+
+		p + a.button, .col.sm-4 + a.button {
+			text-align: center;
+		}
+	}
+
+	#footer {
+		margin-top: 45px;
+
+		.logo, .social, .contact {
+			text-align: center;
+		}
+
+		.contact {
+			line-height: 26px;
+
+			a, a[href^="tel:"] {
+				text-decoration: none !important;
+			}
+		}
+
+		.address {
+			text-align: center;
+    		margin-bottom: 35px;
+		}
+
+		.copyright .footer_links {
+			line-height: 14px;
+
+			span.desktop {
+				display: none !important;
+			}
+
+			span.mobile {
+				display: block !important;
+			}
+		} 
+
+	} 
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+	#hero .hero-rotator .slide-container.slide01 h1 {
+		max-width: 175px;
+	}
+
+	#body_content {
+		.headshot-row {
+			text-align: center;
+			margin-bottom: 0;
+
+			.circle-bg:after {
+				right: 0;
+				left: 10px;
+				width: 100%;
+				height: auto;
+			}
+
+			.columns.three:nth-of-type(even), .three.columns:nth-of-type(even) {
+				margin-bottom: 25px;
+			}
+		}
+	} 
+
+	#testimonial .quote-row {
+		margin-bottom: 75px;
+	}
+}

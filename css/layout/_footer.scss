@@ -1,0 +1,105 @@
+//Footer Layout & Styles
+@use '../base/variables' as var;
+
+#footer {
+  width: 100%;
+  background: var.$blue;
+  color: #fff;
+  border-top: 5px solid var.$yellow;
+  padding-top: 44px;
+  margin-top: 100px;
+  font-size: 16px;
+  line-height: 20px;
+
+  .logo {
+    margin-bottom: 15px;
+  }
+
+  .social {
+    text-align: right;
+
+    a.social_media, a.social_media:link, a.social_media:visited, a.social_media:active {
+      color: var.$blue;
+      background: #fff;
+      font-weight: normal;
+      text-decoration: none !important;
+      border-radius: 50%;
+      border: #fff solid 1px;
+      margin-right: 15px;
+      width: 35px;
+      text-align: center;
+      height: 35px;
+      display: inline-block;
+      font-size: 18px;
+  
+      &:hover {
+        font-weight: normal;
+        text-decoration: none;
+        background: var.$yellow;
+        border: var.$yellow solid 1px;
+        color: var.$blue;
+      }
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+  
+      i {
+        line-height: 35px;
+      }
+    }
+  } 
+
+  .contact {
+    text-align: right;
+    margin-top: 16px;
+
+    a:link, a:visited {
+      color: #fff;
+      font-weight: 400;
+    }
+
+    a:hover {
+      color: var.$yellow;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    a[href^="tel:"] {
+      text-decoration: none !important;
+    }
+  }
+
+  .copyright {
+    margin-top: 50px;
+    margin-bottom: 5px;
+
+    .footer_links {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: .05em;
+  
+      a:link, a:visited {
+        color: #fff;
+        font-weight: 500;
+      }
+
+      a:hover {
+        color: var.$yellow;
+        text-decoration: none;
+        font-weight: 700;
+      }
+  
+      span:not(#year) {
+        display: inline-block;
+        color: var.$yellow;
+      }
+    } 
+  } 
+}
+
+.hidden_link, a.hidden_link:link, a.hidden_link:hover, a.hidden_link:visited {
+  color: var.$blue !important;
+}

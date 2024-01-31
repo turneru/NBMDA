@@ -1,0 +1,30 @@
+@use '../base/variables' as var;
+
+#article_content {
+    width: 100%;
+}
+
+.eds_news_sb_skin.eds_subCollection_news .article_pager {
+    a.page {
+        color: var.$primary_color;
+        padding: 6px 8px;
+        margin: 0 8px 0 0;
+        line-height: 16px;
+        border: 1px solid var.$primary_color;
+        background: #fff;
+    
+        &.active {
+            background: var.$primary_color;
+            border: 1px solid var.$primary_color;
+            color: #fff;
+        }
+    }
+
+    a.first, a.prev, a.next, a.last {
+        text-transform: lowercase;
+        color: var.$secondary_color;
+        margin: 0 5px 0 0;
+    }
+}
+
+

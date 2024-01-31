@@ -1,0 +1,95 @@
+@use '../base/variables' as var;
+
+/* SearchBoost Styles
+-------------------------------------------------*/
+
+.search-panel {
+   display: inline-block;
+   margin-left: 13px;
+}
+  
+.bstrap30 .row {
+    margin: 0 !important;
+}
+
+.bstrap30 a:focus, .bstrap30 a:hover {
+    color: var.$secondary_color;
+    text-decoration: none !important;
+}
+
+.bstrap30 .btn-primary {
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+.bstrap30 .pagination>li>a, .bstrap30 .pagination>li>span {
+    color: var.$secondary_color !important;
+}
+
+.bstrap30 .pagination>.active>a, .bstrap30 .pagination>.active>a:focus, .bstrap30 .pagination>.active>a:hover, .bstrap30 .pagination>.active>span, .bstrap30 .pagination>.active>span:focus, .bstrap30 .pagination>.active>span:hover {
+	color: #fff !important;
+    background-color: var.$secondary_color !important;
+}
+
+.bstrap30 .sb-footer .pagination li::before {
+    content: none !important;
+}
+
+.btn.btn-primary.search-btn {
+	color:  #666869 !important;
+	border-top-color: transparent!important;
+	border-bottom-color: transparent !important;
+	border-right-color: transparent !important;
+}
+
+.input-group-btn {
+	position: absolute !important;
+	z-index: 5;
+}
+
+.bstrap30 :after {
+    content: "";
+}
+
+.bstrap30 .sb-default .input-group .form-control,
+.bstrap30 .sb-default .input-group span.twitter-typeahead:not(:first-child):not(:last-child) .form-control {
+    border-radius: 0px;
+	background: #66686926 !important;
+	border: 0px !important;
+	color: #666869 !important;
+	padding-left: 35px;
+    width: 100%;
+}
+
+.bstrap30 {
+
+    .btn {
+        font-size: 15px;
+    }
+
+    .sb-default {
+        padding: 0px 0 0px 0; 
+
+        .adv-search {
+            max-width: none;
+            margin: 0 auto;
+            width: 100%;
+        }
+    }
+
+    .col-md-12 {
+        padding: 0;
+    }
+} 
+
+#dnn_avtSearch_pnlInput {
+    .input-group-btn {
+        margin-top: 0px !important;
+        right: auto;
+    }
+    
+    .bstrap30 .sb-default .input-group, .bstrap30 .form-control {
+        height: 30px;
+    }
+}
+

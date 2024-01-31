@@ -1,0 +1,15 @@
+@use '../base/variables' as var;
+
+// Map page Layout & Styles
+#body_content.map {
+    background: #F7F4E0;
+}
+
+#map-top {
+    background: #F7F4E0;
+    padding-top: 100px;
+}
+
+#map-bottom {
+    background: #fff;
+}

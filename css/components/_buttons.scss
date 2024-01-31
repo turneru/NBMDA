@@ -1,0 +1,88 @@
+@use '../base/variables' as var;
+
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button,
+.btn,
+button {
+	display: inline-block;
+	padding: var.$button_padding;
+	color: var.$button_color !important;
+	text-align: center;
+	font-size: var.$button_font_size;
+	font-weight: var.$button_font_weight;
+	font-family: var.$primary_font;
+	text-transform: uppercase;
+	text-decoration: none;
+	white-space: nowrap;
+	background-color: var.$button_bg_color;
+	border-radius: var.$button_border_radius;
+	border: 1px solid var.$button_border_color;
+	cursor: pointer;
+	box-sizing: border-box; 
+
+	&:hover {
+		color: var.$button_hover_color !important;
+		font-weight: var.$button_hover_font_weight !important;
+		border-color: var.$button_hover_border_color;
+		background-color: var.$button_hover_bg_color;
+		text-decoration: none;
+		outline: 0;
+	}
+
+	// Primary Button
+
+	&-primary {
+		color: var.$button_primary_color !important;
+		font-weight: var.$button_primary_font_weight !important;
+		background-color: var.$button_primary_bg_color !important;
+		border-color: var.$button_primary_border_color; 
+
+		&:hover {
+			color: var.$button_primary_hover_color !important;
+			font-weight: var.$button_primary_hover_font_weight !important;
+			background-color: var.$button_primary_hover_bg_color !important;
+			border-color: var.$button_primary_hover_border_color; 
+		}
+	}
+
+	// Secondary Button
+
+	// Secondary Button
+
+	&-secondary {
+		color: var.$button_secondary_color !important;
+		font-weight: var.$button_secondary_font_weight !important;
+		background-color: var.$button_secondary_bg_color !important;
+		border-color: var.$button_secondary_border_color;
+		font-family: var.$secondary_font;
+
+		&:hover {
+			color: var.$button_secondary_hover_color !important;
+			font-weight: var.$button_secondary_font_weight !important;
+			background-color: var.$button_secondary_hover_bg_color !important;
+			border-color: var.$button_secondary_hover_border_color;
+			text-decoration: none; 
+
+			&:after {
+				margin-left: 18px;
+				color: var.$button_secondary_hover_color;
+			}
+		}
+		
+		&:after {
+			// content: "\f061";
+			content: "\f0a9";
+			font-family: "Font Awesome 6 Free";
+			font-weight: 900;
+			font-size: 28px;
+			background: #fff;
+			color: var.$button_secondary_color;
+			vertical-align: middle;
+			border-radius: 50%;
+			padding: 0;
+			transition: margin-left 0.4s ease;
+			margin-left: 12px;
+		}
+	}
+}

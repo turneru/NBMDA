@@ -1,0 +1,144 @@
+<footer role="contentinfo">
+    <div id="footer" class="clearfix">
+        <div class="container">
+			<div class="row no-margin">
+                <div class="col-md-6">
+                    <div class="logo">
+                        <img src="<%= SkinPath %>images/logo_white.svg" alt="North American Building Material Distribution Association" width="218">
+                    </div>
+                    <div class="address">
+                        <strong>North American Building Material Distribution Association</strong><br />
+                        330 North Wabash Avenue, Suite 2000<br />
+                        Chicago, IL 60611
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="social">
+                        <a href="https://www.facebook.com/NBMDA" class="social_media" target="_blank"><i class="fa-brands fa-facebook-f fa-fw"></i></a>
+                        <a href="https://twitter.com/DistributorConv" class="social_media" target="_blank"><i class="fa-brands fa-x-twitter fa-fw"></i></a>
+                        <a href="https://www.linkedin.com/company/north-american-building-material-distribution-association-nbmda-/" class="social_media" target="_blank"><i class="fa-brands fa-linkedin-in fa-fw"></i></a>
+                        <a href="http://www.youtube.com/user/NBMDAheadquarters" class="social_media" target="_blank"><i class="fa-brands fa-youtube fa-fw"></i></a>
+                    </div>
+                    <div class="contact">
+                        <span class="desktop">t. 888.747.7862 or 312.321.6845<br /></span>
+                        <span class="mobile">t. <a href="tel:+1-888-747-7862">888.747.7862</a> or <a href="tel:+1-312-321-6845">312.321.6845</a><br /></span>
+                        <a href="mailto:info@nbmda.org">info@nbmda.org</a> 
+                    </div>
+                </div>
+			</div>
+            <div class="row no-margin">
+                <div class="col-md-12 copyright">
+                    <div class="footer_links">
+                        <a href="/About/Contact-Us" target="_blank">Contact Us</a>&nbsp;&nbsp;<span>&bull;</span>&nbsp;&nbsp;
+                        <a href="/About/What-is-NBMDA#privacypolicy" target="_blank">Privacy Policy</a>&nbsp;&nbsp;<span class="desktop">&bull;&nbsp;&nbsp;</span><span class="mobile"><br></span>
+                        <a href="/Terms-of-Use" target="_blank">Website Terms of Use</a><span class="desktop">&nbsp;&nbsp;<span>&bull;</span>&nbsp;&nbsp;</span><span class="mobile"><br></span>&copy; <span id="year"></span> NBMDA. All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+            <div class="row no-margin">
+                <div class="twelve columns">
+                    <% If Request.IsAuthenticated Then%>
+                		<a href="/home/ctl/logoff" class="hidden_link">Logoff</a>
+            		<% Else%>
+               			<a href="/login.aspx?mode=host" class="hidden_link">Login</a>
+            		<% End If%>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+	
+<script>
+$(".cc_article_card").click(function(){
+    window.location = $(this).attr("data-href");
+    return false;
+}); 	
+
+//Slicknav close open menu items when opening another
+function slicknavOpened(trigger) {
+    var $trigger = $(trigger[0]);
+    if ($trigger.hasClass('slicknav_btn')) {
+        // this is the top-level menu/list opening.
+        // we only want to trap lower-level/sublists.
+        return;
+    }
+    // trigger is an <a> anchor contained in a <li>
+    var $liParent = $trigger.parent();
+    // parent <li> is contained inside a <ul>
+    var $ulParent = $liParent.parent();
+    // loop through all children of parent <ul>
+    // i.e. all siblings of this <li>
+    $ulParent.children().each(function () {
+        var $child = $(this);
+        if ($child.is($liParent)) {
+            // this child is self, not is sibling
+            return;
+        }
+        if ($child.hasClass('slicknav_collapsed')) {
+            // this child is already collapsed
+            return;
+        }
+        if (!$child.hasClass('slicknav_open')) {
+            // could throw an exception here: this shouldn't happen
+            // because I expect li to have class either slicknav_collapsed or slicknav_open
+            return;
+        }
+        // found a sibling <li> which is already open.
+        // expect that its first child is an anchor item.
+        var $anchor = $child.children().first();
+        if (!$anchor.hasClass('slicknav_item')) {
+            return;
+        }
+        // close the sibling by emulating a click on its anchor.
+        $anchor.click();
+    });
+}	
+	
+$(function() { 
+	$('#navigation .nav #dnnMenu .topLevel').slicknav({
+    allowParentLinks: true,
+    beforeOpen: function(trigger) { slicknavOpened(trigger);}
+	});
+});	
+
+var currentYear = (new Date()).getFullYear();
+$(document).ready(function() {
+	$("#year").text(currentYear);
+});	
+
+$(document).ready(function() {
+	$(".bstrap30 .sb-default input").attr("placeholder", " ");
+});		
+
+
+$(document).ready(function() {
+	var pageTitleH = $("#page_title h1").height();
+
+    if (pageTitleH > 120) {
+        $("#page_title").css("min-height", "220px");
+    } 	
+});	
+
+
+//Hide/Do stuff on DNN login page		
+if (window.location.href.indexOf("login.aspx?") > -1) {
+    $("#hero, #callouts, #benefits").hide();
+} 				
+	
+$(document).euCookieLawPopup().init({
+  popupPosition : 'bottom',
+  colorStyle : 'default',
+  compactStyle : false,
+  popupTitle : 'This website is using cookies',
+  popupText : 'This website uses cookies to ensure you get the best experience on our website. To learn more about cookies and how we use them, please view our <a href="/Privacy-Policy">privacy policy</a>.',
+  buttonContinueTitle : 'Agree',
+  buttonLearnmoreTitle : '',
+  buttonLearnmoreOpenInNewWindow : true,
+  agreementExpiresInDays : 30,
+  autoAcceptCookiePolicy : false,
+  htmlMarkup : null
+});
+	
+</script>
+	
+

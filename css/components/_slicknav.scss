@@ -1,0 +1,194 @@
+@use '../base/variables' as var;
+
+.slicknav_btn { 
+    position: relative; 
+    display: block; 
+    float: right; 
+    padding: 0.438em 0.625em 0.438em 0.625em; 
+    line-height: 1.125em; 
+    cursor: pointer; 
+    margin: 5px 5px 6px;
+    text-decoration:none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;  
+    background-color: var.$primary_color;
+
+    .slicknav_icon-bar + .slicknav_icon-bar { 
+        margin-top: 0.188em 
+    }
+}
+
+.slicknav_menu { 
+    // *zoom: 1; 
+    font-size:16px;
+    box-sizing:border-box;
+    background: var.$primary_color;
+    padding:5px 0px;
+
+    * {
+        box-sizing:border-box;
+    }
+
+    .slicknav_menutxt { 
+        display: block; 
+        line-height: 1.188em; 
+        float: left; 
+        color: #ffffff;
+        font-weight: 700;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    .slicknav_icon { 
+        float: left; 
+        margin: 0.188em 0 0 0.438em; 
+    }
+
+    .slicknav_no-text { 
+        margin: 0 
+    }
+
+    .slicknav_icon-bar { 
+        display: block; 
+        width: 1.125em; 
+        height: 0.125em; 
+        -webkit-border-radius: 1px; 
+        -moz-border-radius: 1px; 
+        border-radius: 1px; 
+        -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25); 
+        -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25); 
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25); 
+        background-color: #ffffff;
+    }
+
+    &:before {
+		content: " ";
+		display: table;
+	}
+
+	&:after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}
+
+.slicknav_nav { 
+    clear: both;
+    color:#fff;
+    margin:0;
+    padding:0;
+    font-size:0.875em;
+    list-style: none;
+    overflow:hidden;
+
+    ul {
+		display: block;
+        list-style: none;
+        overflow:hidden;
+        padding:0;
+        margin:0px;
+	}
+
+	li {
+		display: block;
+
+        &.slicknav_open {
+            .slicknav_arrow {
+                background: var.$yellow;
+            }
+
+            .subLevel {
+                background-color: #F7F4E0;
+                border-top: 5px solid var.$yellow;
+
+                a {
+                    color: var.$primary_color !important;
+                    font-family: "Montserrat", sans-serif;
+
+                    &:hover {
+                        background: #F7F4E0;
+                        color: var.$yellow !important;
+                    }
+                }
+            }
+        }
+	}
+
+    .slicknav_arrow { 
+        font-size: 16px;
+        margin: 0;
+        float: right;
+        border-radius: 50%;
+        background: #fff;
+        width: 25px;
+        height: 25px;
+        /* line-height: 25px; */
+        text-align: center;
+        color: var.$primary_color;
+    }
+
+    .slicknav_item { 
+        cursor: pointer; 
+    }
+
+    .slicknav_row { 
+        display: block;
+        padding:5px 10px;
+        margin:2px 5px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        border-radius: 6px;
+        background: var.$primary_color;
+        color:#ffffff; 
+
+        &:hover {
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            border-radius: 6px;
+            background: var.$primary_color;
+            color:#ffffff;
+        }
+    }
+
+    a.slicknav_item.slicknav_row:hover {
+        color: var.$yellow;
+    }
+
+    a { 
+        display: block;
+        padding:5px 10px;
+        margin:2px 5px;
+        text-decoration:none;
+        color:#fff !important; 
+        font-family: "Montserrat", sans-serif;
+
+        &:hover{
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            border-radius: 6px;
+            background: var.$primary_color;
+            color:#ffffff;
+        }
+    }
+
+    .slicknav_item a, .slicknav_parent-link a { 
+        display: inline-block; 
+        padding:0;
+        margin:0;
+    }
+
+    .slicknav_txtnode {
+        margin-left:15px;   
+    }
+}
+
+.slicknav_brand { 
+    float:left;
+    color:#ffffff;
+	font-size: 18px;
+	line-height:30px;
+	padding:7px 12px;
+	height:44px; 
+}
+

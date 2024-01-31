@@ -1,0 +1,205 @@
+.cms-page .page-content ul.nav-tabs>li::before, 
+.cms-page-my-profile .page-content ul li::before, 
+.wizard-table ul.steps li::before, 
+.wizard-table ul.sub-categories-ul li::before {
+     content: none;
+}
+
+#main_pnlSiteTemplateFooter.col-md-12, #main_pnlSiteTemplateHeader.col-md-12 {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+ul.page-sidebar-menu > li.active > a, ul.page-sidebar-menu > li.active > span > a {
+    background: #32666E !important;
+}
+
+ul.page-sidebar-menu > li.active > a .selected, ul.page-sidebar-menu > li.active > span > a .selected {
+    background-image: none !important;
+}
+
+.form-wizard .steps {
+    height: auto;
+}
+
+.login-container h3 {
+    margin-top: 15px;
+}
+
+.login-form a.login-help {
+    margin-top: 0px; 
+}
+
+
+.login .content label { color: #000000 !important; }
+.login .content p, .login .content label {
+    color: #000000 !important;
+	font-size: 16px !important;
+}
+.login .content h3 {
+    color: #000000 !important;
+	font-style: normal;
+	font-size: 18px;
+	font-weight: 700 !important;
+}
+.login .content h4 {
+    color: #000000 !important;
+	text-transform: none;
+	font-size: 18px;
+	font-weight: 700 !important;
+}
+
+#main_content_Login_pnlLogin .btn.green, 
+#main_content_Login_pnlLogin .btn.green:hover, 
+#main_content_Login_pnlLogin .btn.green:focus, 
+#main_content_Login_pnlLogin .btn.green:active, 
+#main_content_Login_pnlLogin .btn.green.active, 
+#main_content_Login_ForgotPasswordPanel .btn.green,
+#main_content_Login_ForgotPasswordPanel .btn.green:hover, 
+#main_content_Login_ForgotPasswordPanel .btn.green:focus, 
+#main_content_Login_ForgotPasswordPanel .btn.green:active, 
+#main_content_Login_ForgotPasswordPanel .btn.green.active, 
+#main_content_Login_CreateUserForm_lnkSignupButton.btn.green,
+#main_content_Login_CreateUserForm_lnkSignupButton.btn.green:hover, 
+#main_content_Login_CreateUserForm_lnkSignupButton.btn.green:focus, 
+#main_content_Login_CreateUserForm_lnkSignupButton.btn.green:active {
+    background-color: #32666E !important;
+}
+
+#main_content_Login_LoginPanel a, #main_content_Login_ForgotPasswordPanel a, #main_content_Login_CreateUserForm_lnkSignupGoToLogin {
+    color: #32666E !important;
+}
+
+#main_content_Login_LoginPanel a:hover, #main_content_Login_ForgotPasswordPanel a:hover, #main_content_Login_CreateUserForm_lnkSignupGoToLogin:hover {
+    color: #C7B62E !important;
+}
+
+#main_content_Login_ForgotPasswordPanel.forgot-form, #main_content_Login_SignupPanel.register-form {
+    background-color: #ffffff !important;
+} 
+
+#main_content_Login_LoginPanel h3.form-title {
+	font-style: normal;
+	font-size: 18px;
+	font-weight: 700 !important;
+    margin-top: 0;
+}
+
+#main_content_Login_LoginPanel .btn.green, #main_content_Login_ForgotPasswordPanel .btn.green, #main_content_Login_SignupPanel .btn.green, .btn.green {
+    background-color: #32666E  !important;
+}
+
+#main_content_Login_LoginPanel .btn.green:hover, #main_content_Login_ForgotPasswordPanel .btn.green:hover, #main_content_Login_SignupPanel .btn.green:hover, .btn.green:hover {
+    background-color: #C7B62E  !important;
+    text-decoration: none;
+}
+
+.btn {
+    padding: 7px 14px !important;
+    font-size: 14px !important;
+    border: none !important;
+}
+
+.profile ul.profile-nav {
+    margin-left: 0;
+}
+
+.page-sidebar-menu>li a i {
+    margin-top: 5px;
+}
+
+.backstretch {
+    display: none !important;
+}
+
+.login {
+    background-color: #fff !important;
+}
+
+.login .logo {
+    height: auto;
+    max-width: 450px;
+    margin-top: 0;
+}
+
+.login .content, .body-signup.login .content, .body-signup .login-container {
+    width: auto !important;
+}
+
+.login .content .login-form, .login .content .forgot-form, .login .content .register-form {
+    padding: 20px 0px 15px 0px;
+    margin-bottom: 15px;
+}
+
+.login-form a.login-help i, .login-form a.forgot-password-help i {
+    color: #32666E;
+}
+
+.tooltip-label-icon {
+    color: #32666E;
+}
+
+.tabbable-custom .nav-tabs>li.active {
+    border-top: 3px solid #C7B62E;
+}
+
+#main_sidebar {
+    margin-top: 345px; 
+}
+
+#main_pnlSiteTemplateFooter {
+    padding: 0;
+}
+
+.padding-left-5 {
+    padding-left: 5px !important;
+}
+
+.padding-right-5 {
+    padding-right: 5px !important;
+}
+
+/* DNN Overrides */
+#header {
+    background: #fff;
+}
+
+#page_title h1 {
+    font-weight: 700 !important;
+}
+
+#footer {
+    padding-bottom: 25px;
+}
+
+#footer .social a.social_media, #footer .social a.social_media:link, #footer .social a.social_media:visited, #footer .social a.social_media:active {
+    border-radius: 50% !important;
+    vertical-align: middle;
+}
+
+#footer .social a.social_media:nth-of-type(2) {
+    padding-top: 7px;
+}
+
+#footer .social a.social_media svg {
+    fill: #32666E;
+}
+
+#footer .social a.social_media i, #footer .social a.social_media:link i, #footer .social a.social_media:visited i, #footer .social a.social_media:active i {
+    margin-top: 0;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+input[type=submit] {
+    width: inherit;
+}
+
+th, td {
+    padding: inherit;
+    text-align: left;
+}
+
+pre, blockquote, dl, figure, table, p, ul, ol {
+    margin-bottom: inherit;
+}

@@ -1,0 +1,160 @@
+// Global Variables
+
+// Site Variables
+
+$primary_color: #32666E; $blue: #32666E;
+$secondary_color: #7B4C25; $brown: #7B4C25;
+$tertiary_color: #C7B62E; $yellow: #C7B62E;
+$body_color: #54575A; $grey: #54575A;
+
+$color_option4: #AD5E27; $orange: #AD5E27;
+$color_option5: #159F86; $green: #159F86;
+$color_option6: #00789B; $teal: #00789B;
+$color_option7: #666869; $grey: #666869;
+
+
+$container_width: 1280px;
+
+$base_font_size: 1.8rem;
+$primary_font: 'Fira Sans', sans-serif;
+$secondary_font: 'Montserrat', sans-serif;
+$body_line_spacing: 0;
+
+// Font Weights
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$extrabold: 800;
+$black: 900;
+
+$body_weight: $regular;
+$body_bg_color: #ffffff;
+
+// Heading Variables
+
+$heading_weight: $bold;
+$heading_font: $secondary_font;
+
+$h1_font: $heading_font;
+$h1_font_size:3.4rem;
+$h1_weight: $bold;
+$h1_color: $yellow;
+$h1_line_spacing: 36px;
+$h1_letter_spacing: .05em;
+$h1_bottom_margin:0px;
+$h1_top_margin: 0px;
+
+$h2_font: $heading_font;
+$h2_font_size:3rem;
+$h2_weight: $heading_weight;
+$h2_color: $brown;
+$h2_line_spacing: 34px;
+$h2_letter_spacing: 0;
+$h2_bottom_margin:30px;
+$h2_top_margin: 0px;
+
+$h3_font: $heading_font;
+$h3_font_size:2.8rem;
+$h3_weight: $heading_weight;
+$h3_color: $blue;
+$h3_line_spacing: 32px;
+$h3_letter_spacing: 0;
+$h3_bottom_margin: 15px;
+$h3_top_margin: 50px;
+
+$h4_font: $heading_font;
+$h4_font_size:2.6rem;
+$h4_weight: $heading_weight;
+$h4_color: $teal;
+$h4_line_spacing: 30px;
+$h4_letter_spacing: 0;
+$h4_bottom_margin:20px;
+$h4_top_margin: 30px;
+
+$h5_font: $heading_font;
+$h5_font_size:2rem;
+$h5_weight: $heading_weight;
+$h5_color: $green;
+$h5_line_spacing: 34px;
+$h5_letter_spacing: 0;
+$h5_bottom_margin: 10px;
+$h5_top_margin: 20px;
+
+//Link Variables
+
+$link_color: $primary_color;
+$link_weight: $bold;
+$link_style: none;
+
+$link_hover_color: $yellow;
+$link_hover_weight: $bold;
+$link_hover_style: underline;
+
+// Button Variables
+
+$button_color: #ffffff;
+$button_padding: 8px 30px;
+$button_font: $secondary_font;
+$button_font_size: 2rem;
+$button_font_weight: $bold;
+$button_bg_color: $primary_color;
+$button_border_color: $primary_color;
+$button_border_radius: 10px;
+
+$button_hover_color: #ffffff;
+$button_hover_font_weight: $button_font_weight;
+$button_hover_bg_color: $yellow;
+$button_hover_border_color: $yellow;
+
+// Primary Button Variables
+
+$button_primary_color: #ffffff;
+$button_primary_font_weight: $button_font_weight;
+$button_primary_bg_color: $primary_color;
+$button_primary_border_color: $primary_color;
+
+$button_primary_hover_color: #ffffff;
+$button_primary_hover_font_weight: $button_font_weight;
+$button_primary_hover_bg_color: $secondary_color;
+$button_primary_hover_border_color: $secondary_color;
+
+// Secondary Button Variables
+
+$button_secondary_color: $primary_color;
+$button_secondary_font_weight: $button_font_weight;
+$button_secondary_bg_color:  transparent;
+$button_secondary_border_color:  transparent;
+
+$button_secondary_hover_color: $yellow;
+$button_secondary_hover_font_weight: $button_font_weight;
+$button_secondary_hover_bg_color:  transparent;
+$button_secondary_hover_border_color:  transparent;
+
+// Navigation Variables
+
+$nav_bg_color: #fff;
+$nav_alignment: right;
+
+$nav_item_font: $secondary_font;
+$nav_item_color: $primary_color;
+$nav_item_font_weight: $bold;
+$nav_item_font_size: 1.8rem;
+$nav_item_padding: 0px 0px 10px;
+$nav_item_bg_color: transparent;
+
+$nav_item_hover_color: $yellow;
+$nav_item_hover_bg_color: #fff;
+
+$subnav_bg_color: #F7F4E0;
+
+$subnav_item_font: $secondary_font;
+$subnav_item_color: $primary_color;
+$subnav_item_font_weight: $medium;
+$subnav_item_font_size: 1.8rem;
+$subnav_item_padding: 0px;
+$subnav_item_bg_color: transparent;
+
+$subnav_item_hover_color: $yellow;
+$subnav_item_hover_bg_color: transparent;
